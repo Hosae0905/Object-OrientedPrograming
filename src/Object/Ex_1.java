@@ -1,13 +1,17 @@
 package Object;
 
-public class Ex_1 {
+/**
+ * 객체
+ */
+
+/*public class Ex_1 {
 
     public static void main(String[] args) {
-        /*AirCondition controller = new AirCondition();
+        *//*AirCondition controller = new AirCondition();
         controller.temp = 20;
 
         controller.tempDown();
-        System.out.println("현재 온도는 " + controller.temp + "도 입니다.");*/
+        System.out.println("현재 온도는 " + controller.temp + "도 입니다.");*//*
 
         AirCondition controller = new AirCondition();
         controller.temp = 20;
@@ -30,9 +34,9 @@ public class Ex_1 {
         System.out.println("현재 Kim에어컨 온도는 " + Kcontroller.temp + "도 입니다.");
 
     }
-}
+}*/
 
-class AirCondition {
+/*class AirCondition {
     String color;
     boolean power;
     int temp;
@@ -41,5 +45,5 @@ class AirCondition {
     void tempUp() { temp++; }
     void tempDown() { temp--; }
 
-}
+}*/
 
