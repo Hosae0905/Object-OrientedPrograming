@@ -36,11 +36,11 @@ public class Ex_7 {
 class MyMath1 {
     int x, y;
 
-    int add() {
+    int add() { //인스턴스 메서드
         return x + y;
     }
 
-    static int add(int x, int y) {
+    static int add(int x, int y) {  //클래스 메서드
         return x + y;
     }
 

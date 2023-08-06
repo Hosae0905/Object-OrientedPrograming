@@ -24,6 +24,7 @@ public class ConstructorEx2 {
         Bike MyBike2 = new Bike("K사");
 
 
+
         System.out.println("저의 Bike의 브랜드는 " + MyBike.brand + " 종류는 " + MyBike.type + " 바퀴의 갯수는 " + MyBike.wheel + " 입니다.");
         System.out.println("저의 Bike의 브랜드는 " + MyBike2.brand + " 종류는 " + MyBike2.type + " 바퀴의 갯수는 " + MyBike2.wheel + " 입니다.");
     }
@@ -36,31 +37,31 @@ class Bike {
 
     Bike() {
         this("H사", "electronic", 2);
-        /*
-        * brand = "H사"
-        * this("H사", "electronic", 2);
-        * 이런 식으로 첫 줄에 변수에 값을 대입하고 그 다음 줄에 생성자를 호출하면 에러가 발생한다.
-        * */
+//        brand = "H사";
+//        this("H사", "electronic", 2);
+        //이런 식으로 첫 줄에 변수에 값을 대입하고 그 다음 줄에 생성자를 호출하면 에러가 발생한다.
+
+
+
     }
 
     Bike(String brandName) {
         this(brandName, "electronic", 2);
     }
 
-    Bike(String brand, String type, int wheel) {
+    /*Bike(String brand, String type, int wheel) {
         this.brand = brand;
         this.type = type;
         this.wheel = wheel;
-    }
+    }*/
 
-    /*
-    현재 사용하는 지역 변수와 값을 저장해야 되는 인스턴스 변수랑 이름이 같다
-    참조변수 this를 사용해서 지역 변수와 인스턴스 변수를 구분해준다
+    /*현재 사용하는 지역 변수와 값을 저장해야 되는 인스턴스 변수랑 이름이 같다
+    참조변수 this를 사용해서 지역 변수와 인스턴스 변수를 구분해준다*/
     Bike(String brand, String type, int wheel) {
         brand = brand;
         type = type;
         wheel = wheel;
-    }*/
+    }
 
 }
 

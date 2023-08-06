@@ -15,6 +15,11 @@ public class OverloadingEx {
     public static void main(String[] args) {
         //System.out.println();     //내부 구조를 확인하면 여러 매개변수를 받는 것을 확인할 수 있다.
 
+        Pasta pasta = new Pasta();
+        System.out.println(pasta.makePasta("올리브유"));
+        pasta.makePasta("카놀라유", "크림");
+        System.out.println(pasta.makePasta("카놀라유"));
+
         OverloadingTest test = new OverloadingTest();
 
         System.out.println(test.calculate(5,4));
@@ -41,5 +46,12 @@ class OverloadingTest {
 
     float calculate(float x, float y) {
         return x - y;
+    }
+}
+
+class Pasta {
+    String makePasta(String oil) { return "오일 파스타"; }
+    void makePasta(String oil, String source) {
+        System.out.println(source + " 파스타");
     }
 }

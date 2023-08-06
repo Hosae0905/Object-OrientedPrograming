@@ -14,27 +14,25 @@ class Data3 { int x; }
 public class Ex_6 {
     public static void main(String[] args) {
 
-        Data1 d1 = new Data1();
-        Data2 d2 = new Data2();
+
         Data3 d3 = new Data3();
 
         //기본형 매개변수 예제
         //기본형 타입을 넘겨주기 때문에 읽기만 가능하다
-        /*d1.x = 10;
+        Data1 d1 = new Data1();
+        d1.x = 10;
         System.out.println("main() : x = " + d1.x);
 
         change(d1.x);
         System.out.println("After change(d1.x)");
-        System.out.println("main() : x = " + d1.x);*/
+        System.out.println("main() : x = " + d1.x);
 
         //참조형 매개변수 예제
         //객체를 넘겨주기 때문에 해당 객체를 읽고 수정할 수 있다.
-        /*d2.x = 10;
-        System.out.println("main() : x = " + d2.x);
-
+        Data2 d2 = new Data2();
         dataChange(d2);
         System.out.println("dataChange(d2.x)");
-        System.out.println("main() : x = " + d2.x);*/
+        System.out.println("main() : x = " + d2.x);
 
 
         //참조형 매개변수 & 참조형 반환타입

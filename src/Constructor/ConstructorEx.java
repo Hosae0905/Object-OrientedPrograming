@@ -14,6 +14,11 @@ package Constructor;
 
 public class ConstructorEx {
     public static void main(String[] args) {
+        Car car1 = new Car();
+        car1.type = "auto";
+        car1.brand = "T사";
+        car1.door = 4;
+
         Car car_1 = new Car();                           // 기본 생성자 호출
         Car car_2 = new Car("H사", "auto", 4);   // 매개변수가 있는 생성자 호출
 
@@ -41,7 +46,6 @@ class Car {
      * 인스턴스를 만들 때 값을 전달하여 인스턴스 변수를 초기화할 수 있다
      * 따로 초기화 하지 않고 Car car_2 = new Car("H사", "auto", 4); 이렇게 한 번에 초기화할 수 있어 코드의 양을 줄일 수 있다.
      */
-
     Car(String a, String b, int c) {        // 매개변수가 있는 생성자
         brand = a;
         type = b;

@@ -36,4 +36,11 @@ class Card {
     //클래스 변수
     static int weight;
     static int height;
+
+    public void method() {
+        //지역 변수
+        int price = 1000;
+    }
 }
+
+
