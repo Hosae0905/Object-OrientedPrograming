@@ -19,6 +19,9 @@ public class inheritanceEx {
         Child c = new Child();
         System.out.println(c.saveMyMoney());            //조상의 money가 변경될 시 자손의 money도 변경됨
         System.out.println(c.saveParentMoney());        //자손의 money가 변경되도 조상의 money는 변경되지 않음
+
+        Country country = new Country();
+        System.out.println(c.equals(new Child()));
     }
 
 }
@@ -26,8 +29,19 @@ public class inheritanceEx {
 // 조상이 따로 선언되지 않은 클래스는 자동적으로 최상위 클래스인 Object 클래스를 상속받게 된다
 // 따라서 모든 클래스의 최상위 조상은 Object로 해당 클래스에 정의된 11개의 메서드를 상속받게 된다.
 class Parent {
+    int parentMoney = 14000;
+    int account = 0;
+
+    int saveParentMoney() {
+        account += parentMoney;
+        return account;
+    }
+}
+
+class Country { //Object 클래스 자동 상속
     int parentMoney = 12000;
     int account = 0;
+
 
     int saveParentMoney() {
         account += parentMoney;

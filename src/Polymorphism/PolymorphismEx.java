@@ -10,7 +10,7 @@ package Polymorphism;
 
 public class PolymorphismEx {
     public static void main(String[] args) {
-//        Car car = new Suv();        // 조상 타입의 참조변수로 자손 타입의 객체를 가리킬 수 있다.
+        Car car = new Suv();      // 조상 타입의 참조변수로 자손 타입의 객체를 가리킬 수 있다.
 //        Suv suv1 = new Car();     // 자손 타입의 참조변수로 조상 타입의 객체를 가리킬 수 없다.
 //        Suv suv = new Truck();    // 자손 타입의 참조변수로 같은 자손 타입의 객체를 가리킬 수 없다.
 
@@ -23,6 +23,7 @@ public class PolymorphismEx {
          */
 
 //        Car car = null        // null로 초기화하면 객체가 없는 상태이기 때문에 형변환을 해도 멤버를 사용할 수 없다.
+
         Car car1 = new Car();
         Suv suv = new Suv();
         Truck truck = new Truck();

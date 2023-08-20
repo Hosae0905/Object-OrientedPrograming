@@ -37,7 +37,7 @@ class Child extends Parent {
 class Child1 extends Parent {
 
     /*
-    * 참조변수 this를 사용해도 같은 결과를 얻는 이유는 조상에거 상속받은 멤버변수가 있기 때문에 참조변수 this를 사용할 수 있다.
+    * 참조변수 this를 사용해도 같은 결과를 얻는 이유는 조상에서 상속받은 멤버변수가 있기 때문에 참조변수 this를 사용할 수 있다.
     * */
 
     void myMoney() {

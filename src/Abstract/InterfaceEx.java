@@ -19,7 +19,6 @@ interface Cookable {
     // 인터페이스에서 추상 메서드는 public abstract 반환 타입 메서드 명() 으로 작성해야 되지만
     // 인터페이스에서는 추상 메서드만 선언할 수 있기 때문에 앞에 키워드는 생략할 수 있다.
     // 상수 또한 public static final이 필요하지만 생략할 수 있다.
-
     void checkVegetable(String vegetable);
     void slice(Cookable c);
 }

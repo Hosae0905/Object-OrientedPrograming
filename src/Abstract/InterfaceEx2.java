@@ -27,6 +27,11 @@ class Beverage implements Clickable{
     public void clickProduct(String type) {
         System.out.println(type + " 을/를 선택하셨습니다.");
     }
+
+    Clickable clickable() {
+        Beverage beverage = new Beverage();
+        return beverage;
+    }
 }
 
 class Snack implements Clickable {

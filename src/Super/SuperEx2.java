@@ -24,7 +24,7 @@ class Parent1 {
     int money;
     int account;
 
-//    Parent1() {}    // 생성자를 만들면 컴파일러가 기본 생성자를 자동으로 만들어주지 않는다.
+    Parent1() {}    // 생성자를 만들면 컴파일러가 기본 생성자를 자동으로 만들어주지 않는다.
 
     Parent1(int money, int account) {
         this.money = money;
@@ -42,8 +42,8 @@ class Child2 extends Parent1 {
     int account;
 
     Child2(int money, int account) {
-        //super() --> Parent1() 기본 생성자 호출
-        super(10000, 0);        //super()를 따로 작성해주면 기본 생성자 에러 없이 실행이 가능하다.
+        super();     //--> Parent1() 기본 생성자 호출
+//        super(10000, 0);        //super()를 따로 작성해주면 기본 생성자 에러 없이 실행이 가능하다.
         this.money = money;
         this.account = account;
     }

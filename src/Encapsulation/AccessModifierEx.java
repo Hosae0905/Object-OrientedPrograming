@@ -7,6 +7,8 @@ public class AccessModifierEx {
      * 접근 제어자와 그 외 제어자로 구분된다.
      */
 
+    static int account = 1000;
+
     public static void main(String[] args) {
         Test test = new Test();
 //        test.hour = 10;       // private 제어자를 가지고 있기 때문에 다른 클래스에서 접근할 수 없다.
@@ -15,8 +17,15 @@ public class AccessModifierEx {
         test.date = 20;
 
 //        test.money = 100;     // final이 붙은 변수는 상수가 되기 때문에 값을 변경할 수 없다.
-    }
 
+        final int money = 1000;
+//        money = 2000;
+
+        account += 5000;
+
+
+
+    }
 }
 
 class Test {
@@ -45,4 +54,9 @@ class Test {
      */
 
     final int money = 0;
+
+}
+
+abstract class MyWallet {
+    abstract void walletAccount();
 }
