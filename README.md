@@ -3,11 +3,32 @@
 + 프로그래밍 언어 + 객체지향 개념
 + 객체지향 프로그래밍의 핵심 개념으로 상속, 캡슐화, 추상화, 다형성이 있다.
 
-## 클래스와 객체
-+ 클래스의 정의: 객체를 정의한 것
-+ 클래스 용도: 객체를 생성하는데 사용
-+ 객체의 정의: 실제로 존재하는 사물 또는 개념
-+ 객체의 용도: 객체가 가지고 있는 기능과 속성
-+ 객체 = 속성(변수) + 기능(매서드)
-+ 객체를 사용하려면 참조변수가 필요하다
-+ 여러 객체가 참조변수를 참조할 수 있지만, 하나의 참조 변수가 여러 객체를 참조할 수 없다.
+## 클래스 & 객체
++ 클래스 & 객체 정리: https://hotechstory.tistory.com/5
+
+## 변수 & 메서드
++ 변수 & 메서드 정리: https://hotechstory.tistory.com/6
+
+## 오버로딩 & 오버라이딩
++ 오버로딩 & 오버라이딩 정리: https://hotechstory.tistory.com/9
+
+## 생성자 & this
++ 생성자 & this 정리: https://hotechstory.tistory.com/10
+
+## 상속
++ 상속 정리: https://hotechstory.tistory.com/16
+
+## super
++ super 정리: https://hotechstory.tistory.com/17
+
+## 제어자
++ 제어자 정리: https://hotechstory.tistory.com/24
+
+## 다형성
++ 다형성 정리: https://hotechstory.tistory.com/32
+
+## 추상화
++ 추상화 정리: https://hotechstory.tistory.com/34
+
+## 인터페이스
++ 인터페이스 정리: https://hotechstory.tistory.com/33
